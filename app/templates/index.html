@@ -1,5 +1,23 @@
-{% extends  'layout.html' %}
+{% extends 'layout.html' %}
 
 {% block body%}
-{{title}}
+
+{%block styles %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+{%endblock%}
+
+
+<div class="jumbotron text-center">
+    <h1>Welcome to Flask App</h1>
+    <p class="lead">
+        This application is built on the flask python framework.
+    </p>
+
+
+
+</div>
+
+
+
+
 {%endblock%}

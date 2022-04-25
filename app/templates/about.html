@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+    <div class="about">
+
+        {%block styles %}
+        <link rel="stylesheet" href="{{url_for('static',filename='css/about.css')}}">
+        {%endblock%}
+
+        <h1>About Us</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo nisi dolor quia, ipsum ab minima autem fugit
+            molestias inventore quas illo magnam facere, esse, illum doloremque modi odio repudiandae veritatis.
+        </p>
+    </div>
+{%endblock%}
